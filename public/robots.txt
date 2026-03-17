@@ -1,0 +1,11 @@
+# Allow all robots and AI models
+User-agent: *
+Allow: /
+
+# Content signals
+search: yes
+ai-input: yes
+ai-train: yes
+
+# Sitemap location
+Sitemap: https://nepalidate.sandip-ghimire.com.np/sitemap.xml

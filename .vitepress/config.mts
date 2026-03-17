@@ -15,6 +15,34 @@ export default defineConfig({
       },
     ],
     ["meta", { name: "author", content: "Sandip Ghimire" }],
+    [
+      "link",
+      { rel: "canonical", href: "https://nepalidate.sandip-ghimire.com.np/" },
+    ],
+    ["meta", { property: "og:title", content: "Nepali Date Library" }],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content:
+          "Comprehensive Nepali (Bikram Sambat) date library for JavaScript and Python",
+      },
+    ],
+    ["meta", { property: "og:type", content: "website" }],
+    [
+      "meta",
+      {
+        property: "og:url",
+        content: "https://nepalidate.sandip-ghimire.com.np/",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "og:image",
+        content: "https://nepalidate.sandip-ghimire.com.np/logo.png",
+      },
+    ],
   ],
   themeConfig: {
     logo: "/logo.svg",
