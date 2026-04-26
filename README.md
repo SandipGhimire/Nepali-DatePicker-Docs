@@ -1,17 +1,16 @@
-# Nepali Date Ecosystem Documentation
+# Nepali Date Picker Documentation
 
-This repository hosts the official documentation for the **Nepali Date ecosystem**, which includes the core date libraries for multiple languages and the associated UI ecosystem.
+Official documentation for the **Nepali Date Picker** ecosystem, providing ready-to-use Bikram Sambat (BS) date picker components for modern web frameworks.
 
-## Project Scope
+## Project
 
-This documentation covers:
+This documentation covers the following official packages:
 
-- 📅 **Nepali Date Library (NodeJS)**: The core TypeScript/JavaScript library for BS/AD conversion and manipulation. [(GitHub)](https://github.com/SandipGhimire/nepali-date-library-nodejs)
-- 🐍 **Nepali Date Library (Python)**: The core Python library for BS/AD conversion and manipulation. [(GitHub)](https://github.com/SandipGhimire/nepali-date-library-python)
-- 🎨 **UI Components**: Documentation for upcoming Vue and React Nepali Date Pickers.
-- 📚 **Guides & API**: Comprehensive guides, examples, and full API references for both languages.
+- **[Vue 3 (Advanced)](https://github.com/SandipGhimire/Nepali-DatePicker-Vue3)**: Modern component with TypeScript support, Composition API, and smart positioning.
+- **[Vue 2 (Legacy)](https://github.com/SandipGhimire/Nepali-DatePicker-Vue2)**: Compatible component for Vue 2 projects (Maintenance Mode).
+- **React**: (Coming Soon)
 
-This site is statically generated using [VitePress](https://vitepress.dev/).
+---
 
 ## Development
 
