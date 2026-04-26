@@ -1,9 +1,9 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Nepali Date Library",
+  title: "Nepali Date Picker",
   description:
-    "A comprehensive Nepali (Bikram Sambat) date library for TypeScript and JavaScript",
+    "A ready-to-use Nepali (Bikram Sambat) date picker component for Vue 3, Vue 2, and React",
   outDir: "./build",
   head: [
     [
@@ -11,21 +11,24 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "nepali date, bikram sambat, BS date, AD to BS, BS to AD, nepali calendar, nepal, typescript, javascript",
+          "nepali date picker, bikram sambat, BS date, nepali calendar, vue datepicker, vue2 datepicker, react datepicker, nepal, typescript, javascript",
       },
     ],
     ["meta", { name: "author", content: "Sandip Ghimire" }],
     [
       "link",
-      { rel: "canonical", href: "https://nepalidate.sandip-ghimire.com.np/" },
+      {
+        rel: "canonical",
+        href: "https://nepalidatepicker.sandip-ghimire.com.np/",
+      },
     ],
-    ["meta", { property: "og:title", content: "Nepali Date Library" }],
+    ["meta", { property: "og:title", content: "Nepali Date Picker" }],
     [
       "meta",
       {
         property: "og:description",
         content:
-          "Comprehensive Nepali (Bikram Sambat) date library for JavaScript and Python",
+          "A ready-to-use Nepali (Bikram Sambat) date picker component for Vue 3, Vue 2, and React",
       },
     ],
     ["meta", { property: "og:type", content: "website" }],
@@ -33,14 +36,14 @@ export default defineConfig({
       "meta",
       {
         property: "og:url",
-        content: "https://nepalidate.sandip-ghimire.com.np/",
+        content: "https://nepalidatepicker.sandip-ghimire.com.np/",
       },
     ],
     [
       "meta",
       {
         property: "og:image",
-        content: "https://nepalidate.sandip-ghimire.com.np/logo.png",
+        content: "https://nepalidatepicker.sandip-ghimire.com.np/logo.png",
       },
     ],
   ],
@@ -48,145 +51,56 @@ export default defineConfig({
     logo: "/logo.svg",
     nav: [
       { text: "Home", link: "/" },
-      { text: "NodeJS", link: "/docs/NodeJS/" },
-      { text: "Python", link: "/docs/Python/" },
+      {
+        text: "Vue 3",
+        link: "/docs/Vue3/",
+        activeMatch: "/docs/Vue3/",
+      },
+      {
+        text: "Vue 2",
+        link: "/docs/Vue2/",
+        activeMatch: "/docs/Vue2/",
+      },
     ],
     sidebar: {
-      "/docs/NodeJS/": [
+      "/docs/Vue3/": [
         {
           text: "Introduction",
           items: [
-            { text: "Overview", link: "/docs/NodeJS/" },
-            {
-              text: "Getting Started",
-              link: "/docs/NodeJS/getting-started",
-            },
+            { text: "Overview", link: "/docs/Vue3/" },
+            { text: "Getting Started", link: "/docs/Vue3/getting-started" },
           ],
         },
         {
-          text: "API Reference",
+          text: "Reference",
           items: [
-            { text: "Overview", link: "/docs/NodeJS/api/" },
-            {
-              text: "NepaliDate Class",
-              link: "/docs/NodeJS/api/nepali-date-class",
-            },
-            {
-              text: "Conversion Functions",
-              link: "/docs/NodeJS/api/conversion-functions",
-            },
-            {
-              text: "Static Methods",
-              link: "/docs/NodeJS/api/static-methods",
-            },
-            { text: "Constants", link: "/docs/NodeJS/api/constants" },
+            { text: "Overview", link: "/docs/Vue3/api/" },
+            { text: "Props", link: "/docs/Vue3/reference/props" },
+            { text: "Events", link: "/docs/Vue3/reference/events" },
+            { text: "Example", link: "/docs/Vue3/reference/example" },
           ],
         },
         {
-          text: "Use Cases",
-          items: [
-            { text: "Overview", link: "/docs/NodeJS/use-cases/" },
-            {
-              text: "Date Conversion",
-              link: "/docs/NodeJS/use-cases/date-conversion",
-            },
-            {
-              text: "Calendar Generation",
-              link: "/docs/NodeJS/use-cases/calendar-generation",
-            },
-            {
-              text: "Fiscal Year Operations",
-              link: "/docs/NodeJS/use-cases/fiscal-year",
-            },
-            {
-              text: "Date Ranges",
-              link: "/docs/NodeJS/use-cases/date-ranges",
-            },
-          ],
-        },
-        {
-          text: "Examples",
-          items: [
-            { text: "Overview", link: "/docs/NodeJS/examples/" },
-            {
-              text: "Code Snippets",
-              link: "/docs/NodeJS/examples/code-snippets",
-            },
-          ],
-        },
-        {
-          text: "Changelogs",
-          items: [{ text: "v1+", link: "/docs/NodeJS/Changelog/V1" }],
+          text: "Changelog",
+          items: [{ text: "v2+", link: "/docs/Vue3/changelog/v2" }],
         },
       ],
-      "/docs/Python/": [
+      "/docs/Vue2/": [
         {
           text: "Introduction",
           items: [
-            { text: "Overview", link: "/docs/Python/" },
-            {
-              text: "Getting Started",
-              link: "/docs/Python/getting-started",
-            },
+            { text: "Overview", link: "/docs/Vue2/" },
+            { text: "Getting Started", link: "/docs/Vue2/getting-started" },
           ],
         },
         {
-          text: "API Reference",
+          text: "Reference",
           items: [
-            { text: "Overview", link: "/docs/Python/api/" },
-            {
-              text: "NepaliDate Class",
-              link: "/docs/Python/api/nepali-date-class",
-            },
-            {
-              text: "Conversion Functions",
-              link: "/docs/Python/api/conversion-functions",
-            },
-            {
-              text: "Static Methods",
-              link: "/docs/Python/api/static-methods",
-            },
-            {
-              text: "Constants",
-              link: "/docs/Python/api/constants",
-            },
+            { text: "Overview", link: "/docs/Vue2/api/" },
+            { text: "Props", link: "/docs/Vue2/reference/props" },
+            { text: "Events", link: "/docs/Vue2/reference/events" },
+            { text: "Example", link: "/docs/Vue2/reference/example" },
           ],
-        },
-        {
-          text: "Use Cases",
-          items: [
-            { text: "Overview", link: "/docs/Python/use-cases/" },
-            {
-              text: "Date Conversion",
-              link: "/docs/Python/use-cases/date-conversion",
-            },
-            {
-              text: "Calendar Generation",
-              link: "/docs/Python/use-cases/calendar-generation",
-            },
-            {
-              text: "Fiscal Year Operations",
-              link: "/docs/Python/use-cases/fiscal-year",
-            },
-            {
-              text: "Date Ranges",
-              link: "/docs/Python/use-cases/date-ranges",
-            },
-          ],
-        },
-        {
-          text: "Examples",
-          items: [
-            { text: "Overview", link: "/docs/Python/examples/" },
-            {
-              text: "Code Snippets",
-              link: "/docs/Python/examples/code-snippets",
-            },
-          ],
-        },
-        {
-          text: "Changelogs",
-          items: [{ text: "v1+", link: "/docs/Python/Changelog/V1" }],
         },
       ],
     },
