@@ -5,6 +5,9 @@ export default defineConfig({
   description:
     "A ready-to-use Nepali (Bikram Sambat) date picker component for Vue 3, Vue 2, and React",
   outDir: "./build",
+  sitemap: {
+    hostname: "https://nepalidatepicker.sandip-ghimire.com.np/",
+  },
   head: [
     [
       "meta",

@@ -8,4 +8,4 @@ ai-input: yes
 ai-train: yes
 
 # Sitemap location
-Sitemap: https://nepalidate.sandip-ghimire.com.np/sitemap.xml
+Sitemap: https://nepalidatepicker.sandip-ghimire.com.np/sitemap.xml
